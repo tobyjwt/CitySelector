@@ -33,7 +33,7 @@
 </script>
 
 <style lang="scss">
-    @import "../static/css/vhomed.css";
+    @import "../static/css/base.css";
 
     #app {
         .app-router {
