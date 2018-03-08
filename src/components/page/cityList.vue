@@ -59,14 +59,18 @@
         },
         created() {
             this.cityList = cityList;
-            this.$nextTick(() => {
-                this._initScroll();
-                this.calculateHeight();
-            });
+            let that = this;
+            setTimeout(() => {
+                that._initScroll();
+                that.calculateHeight();
+            }, 20);
         },
         mounted() {
+            let that = this;
             this.cityDomList = this.$refs.allcitybar.getElementsByClassName('city-item-list');
-            this.htmlFontSize = window.document.getElementsByTagName('html')[0].style.fontSize;
+            setTimeout(() => {
+                that.htmlFontSize = window.document.getElementsByTagName('html')[0].style.fontSize;
+            }, 20);
         },
         computed: {
             // 计算是否显示搜索提示框
@@ -199,14 +203,16 @@
              * @return {[type]}         [无返回值]
              */
             calculateHeight() {
-                let cityList = this.$refs.allcitybar.getElementsByClassName('city-item-list');
-                let height = 0;
-                this.listHeight.push(height);
-                for (let i = 0; i < cityList.length; i++) {
-                    let item = cityList[i];
-                    height += item.clientHeight;
+                this.$nextTick(() => {
+                    let cityList = this.$refs.allcitybar.getElementsByClassName('city-item-list');
+                    let height = 0;
                     this.listHeight.push(height);
-                }
+                    for (let i = 0; i < cityList.length; i++) {
+                        let item = cityList[i];
+                        height += item.clientHeight;
+                        this.listHeight.push(height);
+                    }
+                });
             },
             /**
              * [跳转到快速检索对应首字母的位置]
@@ -226,7 +232,7 @@
             onSelectFastTouchMove(e) {
                 let firstTouch = e.touches[0];
                 this.touch.y2 = firstTouch.pageY;
-                let itemHeight = 0.4 * parseInt(this.htmlFontSize);
+                let itemHeight = 0.4 * parseInt(this.htmlFontSize); // 高度为0.4rem，换算为实际高度
                 let delta = (this.touch.y2 - this.touch.y1) / itemHeight | 0;
                 let anchorIndex = parseInt(this.touch.anchorIndex) + delta;
                 let el = this.cityDomList[anchorIndex];
