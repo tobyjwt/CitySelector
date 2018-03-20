@@ -204,13 +204,9 @@
              */
             calculateHeight() {
                 this.$nextTick(() => {
-                    let cityList = this.$refs.allcitybar.getElementsByClassName('city-item-list');
-                    let height = 0;
-                    this.listHeight.push(height);
-                    for (let i = 0; i < cityList.length; i++) {
-                        let item = cityList[i];
-                        height += item.clientHeight;
-                        this.listHeight.push(height);
+                    const cityList = this.$refs['allcitybar'].children;
+                    for (let item of cityList) {
+                        this.listHeight.push(item.offsetTop);
                     }
                 });
             },
