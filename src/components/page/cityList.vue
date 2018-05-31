@@ -253,11 +253,11 @@
             z-index: 10;
             background-color: #ffffff;
             width: 100%;
-            height: 1.04rem;
+            height: 104px;
             border-bottom: solid 1px #f0f0f0;
             .search-input-bar {
                 position: relative;
-                top: 0.24rem;
+                top: 24px;
                 display: flex;
                 height: 0.55rem;
                 line-height: 0.55rem;
