@@ -73,21 +73,21 @@
         overflow-x: hidden;
         .intro {
             background-color: white;
-            padding: 0.3rem;
-            font-size: 0.3rem;
+            padding: 30px;
+            font-size: 30px;
         }
         .address-bar {
-            padding: 0 0.3rem;
+            padding: 0 30px;
             background-color: #FFFFFF;
-            border-top: #eeeeee solid 0.02rem;
+            border-top: #eeeeee solid 2px;
             .address-choose {
-                height: 0.97rem;
-                line-height: 0.97rem;
+                height: 97px;
+                line-height: 97px;
                 display: flex;
-                font-size: 0.32rem;
+                font-size: 32px;
                 .address-choose-title {
                     flex: 1;
-                    font-size: 0.32rem;
+                    font-size: 32px;
                     color: #111111;
                     font-weight: 500;
                     text-align: left;
@@ -98,7 +98,7 @@
                     text-align: right;
                     .address-choose-icon {
                         font-family: 'iconfont';
-                        padding-left: 0.2rem;
+                        padding-left: 20px;
                     }
                 }
             }

@@ -37,7 +37,7 @@
 
     #app {
         .app-router {
-            margin-top: 0.88rem;
+            margin-top: 88px;
             position: absolute;
             bottom: 0;
             top: 0;

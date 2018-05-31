@@ -30,30 +30,30 @@
         width: 100%;
         border-bottom: solid 1px #EEEEEE;
         background-color: #F28300;
-        height: 0.88rem;
-        font-size: 0.36rem;
+        height: 88px;
+        font-size: 24px;
         font-family: "Micorsoft Yahei";
         color: #FFFFFF;
         .header-content {
             position: absolute;
             width: 100%;
             bottom: 0;
-            height: 0.88rem;
-            line-height: 0.88rem;
+            height: 88px;
+            line-height: 88px;
             .back {
                 position: absolute;
-                left: 0.2rem;
-                font-size: 0.3rem;
-                width: 1.1rem;
+                left: 20px;
+                font-size: 30px;
+                width: 110px;
                 .back-icon {
                     font-family: iconfont;
                 }
             }
             .sub-title {
                 position: absolute;
-                right: 0.2rem;
+                right: 20px;
                 bottom: 0;
-                font-size: 0.3rem;
+                font-size: 30px;
             }
             .title {
                 text-align: center;
