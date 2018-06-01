@@ -232,7 +232,8 @@
             onSelectFastTouchMove(e) {
                 let firstTouch = e.touches[0];
                 this.touch.y2 = firstTouch.pageY;
-                let itemHeight = 0.4 * parseInt(this.htmlFontSize); // 高度为0.4rem，换算为实际高度
+//                let itemHeight = 0.4 * parseInt(this.htmlFontSize); // 高度为0.4rem，换算为实际高度
+                let itemHeight = 40; // 高度为0.4rem，换算为实际高度
                 let delta = (this.touch.y2 - this.touch.y1) / itemHeight | 0;
                 let anchorIndex = parseInt(this.touch.anchorIndex) + delta;
                 let el = this.cityDomList[anchorIndex];
@@ -259,29 +260,29 @@
                 position: relative;
                 top: 24px;
                 display: flex;
-                height: 0.55rem;
-                line-height: 0.55rem;
+                height: 55px;
+                line-height: 55px;
                 margin: 0 20px;
-                padding: 0 0.27rem;
+                padding: 0 27px;
                 background-color: #eeeeee;
-                font-size: 0.24rem;
-                border-radius: 0.27rem;
+                font-size: 24px;
+                border-radius: 27px;
                 .search-icon, .close-icon {
                     flex: 0 0 auto;
                     font-family: iconfont;
-                    font-size: 0.25rem;
+                    font-size: 25px;
                     color: #999999;
                 }
                 form {
                     flex: 1 0 auto;
                     input {
                         position: relative;
-                        top: -0.03rem;
+                        top: -3px;
                         outline: none;
                         appearance: textfield;
                         color: #999999;
                         background-color: #eeeeee;
-                        text-indent: 0.05rem;
+                        text-indent: 5px;
                     }
                     input[type="search"]::-webkit-search-cancel-button {
                         display: none;
@@ -294,9 +295,9 @@
             background-color: #FFFFFF;
             .city-item-list {
                 .city-title {
-                    padding-left: 0.56rem;
-                    height: 0.5rem;
-                    line-height: 0.5rem;
+                    padding-left: 56px;
+                    height: 50px;
+                    line-height: 50px;
                     color: #666666;
                     background-color: #EEEEEE;
                 }
@@ -304,14 +305,15 @@
         }
         .fast-sel-bar {
             position: fixed;
-            top: 2rem;
+            top: 200px;
             right: 0;
-            width: 0.5rem;
+            width: 50px;
             text-align: center;
             .fast-sel-item {
-                height: 0.4rem;
-                line-height: 0.4rem;
+                height: 40px;
+                line-height: 40px;
                 color: #999999;
+                font-size: 28px;
             }
             .fastSelActive {
                 color: #F28300;
@@ -319,13 +321,13 @@
         }
         ul {
             padding: 0 20px;
-            font-size: 0.28rem;
+            font-size: 28px;
             background-color: #FFFFFF;
             .city-item {
-                padding-left: 0.23rem;
-                height: 1.01rem;
-                line-height: 1.01rem;
-                border-bottom: 0.01rem solid #EEEEEE;
+                padding-left: 23px;
+                height: 101px;
+                line-height: 101px;
+                border-bottom: 1px solid #EEEEEE;
             }
         }
     }
