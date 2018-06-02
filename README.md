@@ -8,3 +8,5 @@
  本地构建方法：clone后npm install->npm run dev<br/>
  欢迎大家提issues呀<br/>
  如有需要可e-maril:jin_wentao@qq.com
+
+### 6.1 去掉了rem，改为px
