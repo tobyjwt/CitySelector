@@ -233,7 +233,7 @@
                 let firstTouch = e.touches[0];
                 this.touch.y2 = firstTouch.pageY;
 //                let itemHeight = 0.4 * parseInt(this.htmlFontSize); // 高度为0.4rem，换算为实际高度
-                let itemHeight = 40; // 高度为0.4rem，换算为实际高度
+                let itemHeight = 20; // 高度为0.4rem，换算为实际高度
                 let delta = (this.touch.y2 - this.touch.y1) / itemHeight | 0;
                 let anchorIndex = parseInt(this.touch.anchorIndex) + delta;
                 let el = this.cityDomList[anchorIndex];
@@ -295,9 +295,10 @@
             background-color: #FFFFFF;
             .city-item-list {
                 .city-title {
-                    padding-left: 56px;
-                    height: 50px;
-                    line-height: 50px;
+                    padding-left: 20px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 20px;
                     color: #666666;
                     background-color: #EEEEEE;
                 }
@@ -305,15 +306,15 @@
         }
         .fast-sel-bar {
             position: fixed;
-            top: 200px;
+            top: 80px;
             right: 0;
             width: 50px;
             text-align: center;
             .fast-sel-item {
-                height: 40px;
+                height: 20px;
                 line-height: 40px;
                 color: #999999;
-                font-size: 28px;
+                font-size: 14px;
             }
             .fastSelActive {
                 color: #F28300;
@@ -321,12 +322,12 @@
         }
         ul {
             padding: 0 20px;
-            font-size: 28px;
+            font-size: 20px;
             background-color: #FFFFFF;
             .city-item {
-                padding-left: 23px;
-                height: 101px;
-                line-height: 101px;
+                padding-left: 11px;
+                height: 60px;
+                line-height: 60px;
                 border-bottom: 1px solid #EEEEEE;
             }
         }

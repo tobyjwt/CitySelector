@@ -73,21 +73,21 @@
         overflow-x: hidden;
         .intro {
             background-color: white;
-            padding: 30px;
-            font-size: 30px;
+            padding: 20px;
+            font-size: 18px;
         }
         .address-bar {
-            padding: 0 30px;
+            padding: 0 20px;
             background-color: #FFFFFF;
             border-top: #eeeeee solid 2px;
             .address-choose {
-                height: 97px;
-                line-height: 97px;
+                height: 68px;
+                line-height: 68px;
                 display: flex;
-                font-size: 32px;
+                font-size: 24px;
                 .address-choose-title {
                     flex: 1;
-                    font-size: 32px;
+                    font-size: 24px;
                     color: #111111;
                     font-weight: 500;
                     text-align: left;

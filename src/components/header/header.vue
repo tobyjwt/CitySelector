@@ -30,20 +30,20 @@
         width: 100%;
         border-bottom: solid 1px #EEEEEE;
         background-color: #F28300;
-        height: 88px;
-        font-size: 24px;
+        height: 68px;
+        font-size: 22px;
         font-family: "Micorsoft Yahei";
         color: #FFFFFF;
         .header-content {
             position: absolute;
             width: 100%;
             bottom: 0;
-            height: 88px;
-            line-height: 88px;
+            height: 68px;
+            line-height: 68px;
             .back {
                 position: absolute;
                 left: 20px;
-                font-size: 30px;
+                font-size: 18px;
                 width: 110px;
                 .back-icon {
                     font-family: iconfont;
