@@ -254,18 +254,18 @@
             z-index: 10;
             background-color: #ffffff;
             width: 100%;
-            height: 104px;
+            height: 66px;
             border-bottom: solid 1px #f0f0f0;
             .search-input-bar {
                 position: relative;
-                top: 24px;
+                top: 12px;
                 display: flex;
-                height: 55px;
-                line-height: 55px;
+                height: 42px;
+                line-height: 42px;
                 margin: 0 20px;
                 padding: 0 27px;
                 background-color: #eeeeee;
-                font-size: 24px;
+                font-size: 20px;
                 border-radius: 27px;
                 .search-icon, .close-icon {
                     flex: 0 0 auto;
@@ -275,6 +275,7 @@
                 }
                 form {
                     flex: 1 0 auto;
+                    width: 100%;
                     input {
                         position: relative;
                         top: -3px;
@@ -283,6 +284,7 @@
                         color: #999999;
                         background-color: #eeeeee;
                         text-indent: 5px;
+                        width: 100%;
                     }
                     input[type="search"]::-webkit-search-cancel-button {
                         display: none;
@@ -308,11 +310,11 @@
             position: fixed;
             top: 80px;
             right: 0;
-            width: 50px;
+            width: 30px;
             text-align: center;
             .fast-sel-item {
                 height: 20px;
-                line-height: 40px;
+                line-height: 20px;
                 color: #999999;
                 font-size: 14px;
             }
