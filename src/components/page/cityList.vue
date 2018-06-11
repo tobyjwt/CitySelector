@@ -297,7 +297,7 @@
             background-color: #FFFFFF;
             .city-item-list {
                 .city-title {
-                    padding-left: 20px;
+                    padding-left: 10px;
                     height: 30px;
                     line-height: 30px;
                     font-size: 20px;
@@ -323,13 +323,14 @@
             }
         }
         ul {
-            padding: 0 20px;
+            padding: 0 10px;
             font-size: 20px;
             background-color: #FFFFFF;
             .city-item {
                 padding-left: 11px;
-                height: 60px;
-                line-height: 60px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
                 border-bottom: 1px solid #EEEEEE;
             }
         }
